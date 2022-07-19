@@ -53,7 +53,9 @@ export default function Shop() {
     fetch("https://covid-shop-mcs.herokuapp.com", requestOptions)
     .then(response => response.json())
     .then(data => {
-      console.log(data)
+      if(data){
+        console.log(data)
+      }
     })
     .catch(error => {
       console.error(error)
